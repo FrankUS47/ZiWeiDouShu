@@ -104,8 +104,8 @@
   function setup() {
     const t = todayParts();
     $("flowDate").value = `${t.year}-${pad(t.month)}-${pad(t.day)}`;
-    // 預設帶入「科技紫微網」範例盤(1981/5/28 子時 男),方便對照
-    initYear(1981); initMonth(5); initDay(28); initShichen("0");
+ 
+    initYear(1981); initMonth(1); initDay(1); initShichen("0");
     $("calType").addEventListener("change", onCalTypeChange);
     $("birthYear").addEventListener("change", () => { const m = $("birthMonth").value, d = $("birthDay").value; initMonth(m); initDay(d); });
     $("birthMonth").addEventListener("change", () => initDay($("birthDay").value));
